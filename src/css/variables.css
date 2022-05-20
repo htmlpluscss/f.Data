@@ -1,0 +1,26 @@
+:root {
+
+	--color: #fff;
+	--text: #777;
+	--grey: #ababab;
+	--orange: #fa481c;
+	--orangeHover: #fa5a32;
+	--green: #5e9f00;
+	--red: red;
+	--error: #f00;
+	--bg: #000;
+	--border: #797979;
+
+	--transitionDefault: 0s;
+	--scrollMargin: 0; /* heightHeader */
+
+	--indent: 40px;
+	--gap: 24px;
+	--space: 36px;
+
+}
+
+$desktop: (min-width: 1250px);
+$mdWidth: (max-width: 1249px);
+$smWidth: (max-width: 767px);
+$xsWidth: (max-width: 359px);

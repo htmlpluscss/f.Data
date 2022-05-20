@@ -1,0 +1,28 @@
+	<aside class="brands-list">
+
+		<div class="center">
+
+			<ul class="brands-list__list">
+
+{% for photo in ["karcher","grass","wilson","krytex","bosch"] %}
+
+				<li class="brands-list__item">
+
+					<picture>
+
+						<source srcset="/img/brands/{{ photo }}--258x123.webp 1x, /img/brands/{{ photo }}--516x246.webp 2x" type="image/webp">
+						<source srcset="/img/brands/{{ photo }}--258x123.png 1x, /img/brands/{{ photo }}--516x246.png 2x">
+
+						<img src="/img/brands/{{ photo }}--258x123.png" alt="{{ photo }}" loading="lazy" width="258" height="123">
+
+					</picture>
+
+				</li>
+
+{% endfor %}
+
+			</ul>
+
+		</div>
+
+	</aside>

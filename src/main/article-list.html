@@ -1,0 +1,70 @@
+{% set article = [
+
+	{
+		name   : "Какое масло заливать в мойку высокого давления?",
+		text   : "Частый вопрос, который задают клиенты на нашем сервисе: \"Какое масло заливать в минимойку?\"…"
+	},
+
+	{
+		name   : "Итальянский фен для сушки автомобиля Bieffe Carfon",
+		text   : "В последние годы услуги по химчистке автомобилей высоко востребованы…"
+	},
+
+	{
+		name   : "Лучшая бытовая мойка - Karcher K 5 Compact",
+		text   : "Почему стоит выбрать мойку высокого давления - именно Karcher K 5 Compact?"
+	}
+
+] %}
+
+	<section class="article-list">
+
+		<div class="center">
+
+			<h2 class="article-list__title h2 h2--sm-18">
+				Поможет с выбором
+			</h2>
+
+			<div class="article-list__column">
+
+{% for item in article %}
+
+				<article class="article-list__item">
+
+					<a href="/" class="article-list__photo">
+
+						<picture>
+
+							<source srcset="/img/article/preview/{{ loop.index }}--480x340.webp" type="image/webp" media="(max-width: 767px)">
+							<source srcset="/img/article/preview/{{ loop.index }}--480x340.png" media="(max-width: 767px)">
+
+							<source srcset="/img/article/preview/{{ loop.index }}--414x256.webp 1x, /img/article/preview/{{ loop.index }}--828x512.webp 2x" type="image/webp">
+							<source srcset="/img/article/preview/{{ loop.index }}--414x256.jpg 1x, /img/article/preview/{{ loop.index }}--828x512.jpg 2x">
+
+							<img src="/img/article/preview/{{ loop.index }}--414x256.jpg" alt="{{ item.name }}" loading="lazy" width="414" height="256">
+
+						</picture>
+
+					</a>
+
+					<div class="article-list__name h5 h5--sm-15">
+
+						<a href="/">
+							{{ item.name }}
+						</a>
+
+					</div>
+
+					<p class="article-list__text">
+						{{ item.text }}
+					</p>
+
+				</article>
+
+{% endfor %}
+
+			</div>
+
+		</div>
+
+	</section>
