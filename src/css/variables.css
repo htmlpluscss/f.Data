@@ -1,22 +1,21 @@
 :root {
 
-	--color: #fff;
-	--text: #777;
-	--grey: #ababab;
-	--orange: #fa481c;
-	--orangeHover: #fa5a32;
-	--green: #5e9f00;
-	--red: red;
-	--error: #f00;
-	--bg: #000;
-	--border: #797979;
+	--color: #252525;
+	--blue: #4db2cd;
+	--purpule: #aa3ed2;
+	--orange: #ff6c38;
+	--orangeGrad: linear-gradient(75deg, var(--orange), #ffa714);
+	--red: #ff3e13;
+	--error: #ff3e13;
+	--bg: #fdfdfd;
+	--border: #e3e3e3;
+	--placeholder: #ccc;
 
 	--transitionDefault: 0s;
-	--scrollMargin: 0; /* heightHeader */
 
-	--indent: 40px;
-	--gap: 24px;
-	--space: 36px;
+--indent: 40px;
+--gap: 24px;
+--space: 36px;
 
 }
 

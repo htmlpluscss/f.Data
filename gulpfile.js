@@ -110,7 +110,8 @@ gulp.task('js', () => {
 
 		'src/js/*.min.js',
 		'src/js/js.js',
-		'src/js/*.js'
+		'src/js/*.js',
+		'!src/js/inputmask.min.js',
 
 	], {since: gulp.lastRun('js')})
 
@@ -135,12 +136,10 @@ gulp.task('js', () => {
 
 gulp.task('serve', () => {
 
-/*	gulp.src([
-		'src/js/min/swiper.min.js',
-		'src/js/min/inputmask.min.js',
-		'src/js/min/nouislider.min.js'
+	gulp.src([
+		'src/js/inputmask.min.js',
 	]).pipe(gulp.dest('build/js'));
-*/
+
 	server.init({
 		server: 'build',
 		files: [

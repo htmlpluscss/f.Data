@@ -25,9 +25,9 @@ body {
 
 	min-width: 320px;
 	color: var(--color);
-	font-size: 14px;
-	line-height: 1.4;
-	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+	font-family: 'Montserrat', sans-serif;
 	-webkit-text-size-adjust: none;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: scrollbar;

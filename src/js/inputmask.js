@@ -10,15 +10,15 @@
 	script.src = '/js/inputmask.min.js';
 	script.onload = () => {
 
-		Array.from(elems, el => {
+		[...elems].forEach( el => {
 
 			let maskInput;
 
 			if(el.classList.contains('inputmask--phone')) {
 
 				maskInput = new Inputmask({
-					mask: "+7 (999) 999 99 99",
-					showMaskOnHover: false
+					mask: el.getAttribute('data-mask'),
+					placeholder: ' '
 				});
 
 			}
@@ -29,6 +29,6 @@
 
 	};
 
-	setTimeout( () => document.head.appendChild(script), Cookies.get('fastLoadScript') ? 0 : 10000);
+	setTimeout( () => document.head.appendChild(script), localStorage.getItem('fastLoadScript') ? 0 : 10000);
 
 })(document.querySelectorAll('.inputmask'));

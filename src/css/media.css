@@ -7,10 +7,11 @@
 
 .center {
 
-	width: 1180px;
+	width: 1320px;
 	max-width: 100%;
 	margin: 0 auto;
 	position: relative;
+	padding: 0 var(--indent);
 
 }
 
@@ -35,8 +36,7 @@
 
 	.center {
 
-		width: 848px;
-		padding: 0 var(--indent);
+		width: 768px;
 
 	}
 
