@@ -4,7 +4,7 @@
 	--blue: #4db2cd;
 	--purpule: #aa3ed2;
 	--orange: #ff6c38;
-	--orangeGrad: linear-gradient(75deg, var(--orange), #ffa714);
+	--orangeHover: #ffa714;
 	--red: #ff3e13;
 	--error: #ff3e13;
 	--bg: #fdfdfd;
@@ -14,8 +14,8 @@
 	--transitionDefault: 0s;
 
 --indent: 40px;
---gap: 24px;
---space: 36px;
+	--gap: 24px;
+	--space: 200px;
 
 }
 

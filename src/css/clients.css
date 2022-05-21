@@ -1,0 +1,76 @@
+.clients {
+
+	margin: var(--space) 0;
+
+	&__title {
+
+		text-align: center;
+		margin-bottom: var(--gap);
+
+	}
+
+	&__intro {
+
+		max-width: 600px;
+		font-weight: 300;
+		margin: auto;
+		text-align: center;
+
+	}
+
+	&__box {
+
+		position: relative;
+		margin-top: 70px;
+
+	}
+
+	&__list {
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 48px 64px;
+
+	}
+
+	&__item {
+
+		padding-left: 160px;
+		position: relative;
+
+		dt {
+
+			margin-bottom: 8px;
+
+		}
+
+		dd {
+
+			font-weight: 300;
+
+		}
+
+		svg {
+
+			fill: var(--purpule);
+
+			[stroke-width] {
+
+				stroke: var(--purpule);
+				fill: none;
+
+			}
+
+		}
+
+	}
+
+	&__btn {
+
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+	}
+
+}

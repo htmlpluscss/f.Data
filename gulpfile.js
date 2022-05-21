@@ -76,7 +76,7 @@ const html = (files, since = {}, folder = '') => {
 
 gulp.task('html', () => html('src/**/index.html', {since: gulp.lastRun('html')}));
 gulp.task('html:touch', () => html('src/**/index.html'));
-gulp.task('html:main', () => html('src/main/**/index.html', {}, '/main'));
+gulp.task('html:main', () => html('src/index.html', {}, '/'));
 
 gulp.task('css', () => {
 
@@ -175,7 +175,7 @@ gulp.task('ftp', () => {
 	const f = filter('**/*.html', {restore: true});
 	const conn = ftp.create( config.ftp );
 
-	return gulp.src( ['build/**/*','build/img/'] )
+	return gulp.src( ['build/**/*'], {since: gulp.lastRun('ftp')})
 		.pipe(debug({title: 'ftp:'}))
 		.pipe(f)
 		.pipe(replace('css/styles.css', 'css/styles.min.css?' + Date.now()))
