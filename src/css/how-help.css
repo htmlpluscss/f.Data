@@ -1,6 +1,21 @@
 .how-help {
 
 	margin: var(--space) 0;
+	position: relative;
+
+	&::before {
+
+		position: absolute;
+		height: 1436px;
+		top: -524px;
+		left: -264px;
+		right: 0;
+		content: '';
+		opacity: .12;
+		pointer-events: none;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1505' height='1436' fill='none' viewBox='0 0 1505 1436'%3E%3Cg filter='url(%23a)'%3E%3Cpath fill='%23BA53DA' d='M1065.72 538.29c72.97-47.68 26.38-98.59-6.04-118.09-113.01-68.69-323.59 66-408.62 89.57-85.03 23.57-199.82 119.37-244.81 229.64-45 110.28 171.19 308.18 242.83 295.77 71.65-12.4 146.68-73.08 183-146.54 36.31-73.46-14.5-171.94 60.18-249.57 74.69-77.63 82.24-41.19 173.46-100.78Z'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='a' width='1504.33' height='1434.86' x='.15' y='.88' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_80_37' stdDeviation='200'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+
+	}
 
 	&__title {
 
@@ -29,7 +44,8 @@
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 48px 64px;
+		align-items: flex-start;
+		gap: 60px 64px;
 
 	}
 
@@ -37,6 +53,10 @@
 
 		padding-left: 160px;
 		position: relative;
+		min-height: 120px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 
 		dt {
 
@@ -55,15 +75,17 @@
 	&__ico {
 
 		position: absolute;
-		top: 20px;
+		top: 0;
 		left: 0;
+		bottom: 0;
+		margin: auto;
 		width: 120px;
 		height: 120px;
 		background-color: #fff;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		box-shadow: 0px 12px 24px rgba(246, 240, 248, 0.8);
+		box-shadow: var(--box-shadow);
 		border-radius: 32px;
 
 		svg {
@@ -84,7 +106,7 @@
 
 		position: absolute;
 		right: 0;
-		bottom: 0;
+		bottom: 20px;
 
 	}
 

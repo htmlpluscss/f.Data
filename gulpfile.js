@@ -42,7 +42,7 @@ const w3cjs            = require('gulp-w3cjs');
 let config             = null;
 
 const site             = 'f.Data';
-const domain           = 'fData.htmlpluscss.website';
+const domain           = 'fdata.htmlpluscss.website';
 
 try {
 

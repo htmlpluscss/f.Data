@@ -17,8 +17,8 @@
 			if(el.classList.contains('inputmask--phone')) {
 
 				maskInput = new Inputmask({
-					mask: el.getAttribute('data-mask'),
-					placeholder: ' '
+					mask: "+7 (999) 999 99-99",
+					placeholder: 'x'
 				});
 
 			}

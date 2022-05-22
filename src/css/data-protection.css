@@ -1,5 +1,54 @@
 .data-protection {
 
+	&__box {
+
+		background-color: #fff;
+		box-shadow: var(--box-shadow);
+		border-radius: 32px;
+		padding: 60px 80px 64px;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	&__bg {
+
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+
+	}
+
+	&__content {
+
+		width: 848px;
+
+	}
+
+	&__btn {
+
+		margin-top: 48px;
+
+	}
+
+	&__img {
+
+		align-self: flex-end;
+		justify-content: flex-end;
+
+		img {
+
+			top: 32px;
+			left: 32px;
+
+		}
+
+	}
 
 
 }

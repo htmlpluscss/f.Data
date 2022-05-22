@@ -7,7 +7,7 @@
 
 .center {
 
-	width: 1320px;
+	width: calc(1320px + var(--indent) + var(--indent));
 	max-width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -17,6 +17,9 @@
 
 @media $desktop {
 
+}
+
+@media $lgWidth {
 
 }
 

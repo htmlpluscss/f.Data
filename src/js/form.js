@@ -6,7 +6,7 @@
 
 	}
 
-	Array.from(items, form => {
+	[...items].forEach( form => {
 
 		const btn = form.querySelector('.form__submit'),
 			  okText = form.querySelector('.form__ok'),
@@ -30,6 +30,7 @@
 
 				form.classList.remove('is-loading');
 				btn.disabled = false;
+				form.reset();
 /*
 				if(result.msg) {
 
@@ -39,23 +40,6 @@
 
 				}
 
-			// результат успеха заявки quality
-
-				if(result.modal === 'quality-ok') {
-
-					document.querySelector('.quality-result__number').textContent = result.number;
-					document.querySelector('.quality-result__product').textContent = result.productName;
-					document.querySelector('.quality-result__product').getAttribute('href', result.productLink);
-
-					const eventModalShow = new CustomEvent("modalShow", {
-						detail: {
-							selector: result.modal
-						}
-					});
-
-					window.modal.dispatchEvent(eventModalShow);
-
-				}
 */
 			// info modal
 
@@ -86,65 +70,6 @@
 						okText.classList.add('hide');
 
 					}
-
-				}
-
-			// error in form
-
-				if(errorText) {
-
-					if(result.type === 'form-error') {
-
-						errorText.textContent = result.text;
-						errorText.classList.remove('hide');
-
-						if(!window.isInViewport(errorText)){
-
-							errorText.scrollIntoView({ behavior: 'smooth' });
-
-						}
-
-					} else {
-
-						errorText.classList.add('hide');
-
-					}
-
-				}
-
-			// redirect
-
-				if(result.redirect) {
-
-					const delay = result.redirectDelay ? result.redirectDelay * 1000 : 0;
-
-					setTimeout( ()=> location.assign(result.redirect), delay);
-
-				}
-
-			// fadeout
-/*
-				if(result.fadeout) {
-
-					okText.classList.remove('is-fadeout');
-
-					setTimeout( ()=> okText.classList.add('is-fadeout'), result.fadeout * 1000);
-
-				}
-
-*/			// reset
-
-				if(result.reset) {
-
-					form.reset();
-
-				}
-
-			// reload
-
-				if(result.refresh) {
-
-					location.reload();
 
 				}
 
