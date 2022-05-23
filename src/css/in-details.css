@@ -1,6 +1,7 @@
 .in-details {
 
 	margin: var(--space) 0;
+	scroll-margin: var(--gap);
 
 	&__flex {
 

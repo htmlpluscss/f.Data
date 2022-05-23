@@ -7,6 +7,14 @@
 	right: 0;
 	z-index: 1;
 
+	&__flex {
+
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+	}
+
 	&__logo {
 
 		font-weight: 800;
@@ -16,6 +24,40 @@
 		span {
 
 			color: var(--orange);
+
+		}
+
+	}
+
+	&__menu {
+
+		display: flex;
+		align-items: center;
+		margin-top: 5px;
+
+		li {
+
+			margin-left: 52px;
+
+		}
+
+		.btn {
+
+			font-size: 18px;
+
+		}
+
+		a {
+
+			@media $desktop {
+
+				&:hover {
+
+					color: var(--orange);
+
+				}
+
+			}
 
 		}
 

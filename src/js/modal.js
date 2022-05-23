@@ -91,13 +91,5 @@
 	});
 
 	modal.addEventListener('modalShow', event => modalShow(event.detail.selector));
-/*
-	modal.ok = (title, text) => {
 
-		modal.querySelector('.modal__item--ok .modal-login__head').innerHTML = title ? title : '';
-		modal.querySelector('.modal__item--ok .modal-login__text').innerHTML = text ? text : '';
-		modalShow('ok');
-
-	}
-*/
 })(document.querySelector('.modal'));

@@ -59,9 +59,19 @@
 
 	&__menu {
 
+		min-width: 256px;
+
 		li + li {
 
 			margin-top: 8px;
+
+		}
+
+		.btn {
+
+			font-size: 16px;
+			line-height: 26px;
+			height: 26px;
 
 		}
 
@@ -94,6 +104,8 @@
 	&__social {
 
 		display: flex;
+		gap: 24px;
+		margin-left: 18px;
 
 		a {
 
@@ -102,7 +114,6 @@
 			background-color: #fff;
 			box-shadow: var(--box-shadow);
 			border-radius: 8px;
-			margin-left: 24px;
 			display: flex;
 			align-items: center;
 			justify-content: center;

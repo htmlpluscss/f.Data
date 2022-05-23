@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-/* color: var(--red) !important; */
+color: var(--red) !important;
 }
 
 html {
@@ -37,8 +37,8 @@ body {
 	overflow-y: scroll;
 	position: relative;
 	background-color: var(--bg);
-/* background-image: url(/css/1.png); */
-background-position: center -22px;
+background-image: url(/css/1250.png);
+background-position: center -0px;
 }
 
 a {

@@ -1,82 +1,33 @@
-( items => {
+( form => {
 
-	if(!items.length) {
+	const btn = form.querySelector('.form-demo__submit');
 
-		return;
+	form.addEventListener('submit', event => {
 
-	}
+		event.preventDefault();
 
-	[...items].forEach( form => {
+		btn.disabled = true;
 
-		const btn = form.querySelector('.form__submit'),
-			  okText = form.querySelector('.form__ok'),
-			  errorText = form.querySelector('.form__error');
+		fetch(form.getAttribute('action'), {
+			method: 'POST',
+			body: new FormData(form)
+		})
+		.then(response => response.json())
+		.then(result => {
 
-		form.addEventListener('submit', event => {
+			console.log(result);
 
-			event.preventDefault();
+			btn.disabled = false;
+			form.reset();
 
-			form.classList.add('is-loading');
-			btn.disabled = true;
-
-			fetch(form.getAttribute('action'), {
-				method: 'POST',
-				body: new FormData(form)
-			})
-			.then(response => response.json())
-			.then(result => {
-
-				console.log(result);
-
-				form.classList.remove('is-loading');
-				btn.disabled = false;
-				form.reset();
-/*
-				if(result.msg) {
-
-					form.reset();
-
-					modal.ok(result.msg.title, result.msg.text);
-
+			window.modal.dispatchEvent(new CustomEvent("modalShow", {
+				detail: {
+					selector: "ok"
 				}
-
-*/
-			// info modal
-
-				if(result.type === 'ok') {
-
-					modal.ok(result.title, result.text);
-
-				}
-
-
-			// ok in form
-
-				if(okText) {
-
-					if(result.type === 'form-ok') {
-
-						okText.textContent = result.text;
-						okText.classList.remove('hide');
-
-						if(!window.isInViewport(okText)){
-
-							okText.scrollIntoView({ behavior: 'smooth' });
-
-						}
-
-					} else {
-
-						okText.classList.add('hide');
-
-					}
-
-				}
-
-			});
+			}));
 
 		});
 
 	});
 
-})(document.querySelectorAll('.form'));
+})(document.querySelector('.form-demo'));
