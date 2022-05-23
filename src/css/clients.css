@@ -4,11 +4,77 @@
 
 	&__title {
 
-		margin-bottom: var(--gap);
+		margin-bottom: 38px;
 
 		@media $mdWidth {
 
 			margin-top: 128px;
+
+		}
+
+	}
+
+	&__cite {
+
+		font-style: normal;
+		font-weight: 300;
+		position: relative;
+		margin-bottom: var(--gap);
+		display: block;
+
+		figure {
+
+			display: flex;
+
+		}
+
+		figcaption {
+
+			margin-left: 32px;
+
+			b {
+
+				display: block;
+				margin-bottom: 2px;
+				font-size: 24px;
+				font-weight: 600;
+
+			}
+
+			small {
+
+				font-size: inherit;
+				display: block;
+
+			}
+
+		}
+
+		img {
+
+			border-radius: 50%;
+			flex-shrink: 0;
+
+			@media $lgWidth {
+
+				width: auto;
+				height: auto;
+
+			}
+
+			@media $mdWidth {
+
+				width: 68px;
+				height: 68px;
+
+			}
+
+			@media $smWidth {
+
+				width: 88px;
+				height: 88px;
+
+			}
 
 		}
 

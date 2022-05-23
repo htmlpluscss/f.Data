@@ -46,34 +46,17 @@
 
 	}
 
-	&__box {
-
-		position: relative;
-		margin-top: 65px;
-
-		@media $lgWidth {
-
-			margin-top: 70px;
-
-		}
-
-		@media $mdWidth {
-
-			margin-top: 38px;
-
-		}
-
-	}
-
 	&__list {
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: flex-start;
 		gap: 40px 50px;
+		margin-top: 65px;
 
 		@media $lgWidth {
 
+			margin-top: 70px;
 			gap: 60px 64px;
 
 		}
@@ -81,6 +64,7 @@
 		@media $mdWidth {
 
 			display: block;
+			margin-top: 38px;
 
 		}
 
@@ -180,6 +164,12 @@
 			}
 
 		}
+
+	}
+
+	&__schema {
+
+		margin: 115px 0 0;
 
 	}
 

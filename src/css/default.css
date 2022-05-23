@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-/* color: var(--red) !important; */
+color: var(--red) !important;
 }
 
 html {
@@ -37,8 +37,8 @@ body {
 	overflow-y: scroll;
 	position: relative;
 	background-color: var(--bg);
-/* background-image: url(/css/768.png); */
-background-position: center -120px;
+background-image: url(/css/2.png);
+background-position: center 0px;
 
 	@media $lgWidth {
 
