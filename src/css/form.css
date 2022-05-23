@@ -75,6 +75,15 @@ legend {
 	overflow: hidden;
 	background-color: var(--orange);
 
+	@media $mdWidth {
+
+		height: 56px;
+		line-height: 56px;
+		font-size: 16px;
+		border-radius: 16px;
+
+	}
+
 	&::before {
 
 		position: absolute;
@@ -154,6 +163,14 @@ legend {
 		line-height: 24px;
 		padding: 0;
 		color: var(--orange);
+
+		@media $mdWidth {
+
+			height: 22px;
+			line-height: 22px;
+			padding: 0;
+
+		}
 
 		&::before {
 

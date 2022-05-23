@@ -6,7 +6,14 @@
 
 	@media $lgWidth {
 
-		margin-top: 5px;
+		padding-top: 80px;
+
+	}
+
+	@media $mdWidth {
+
+		padding: 68px 0;
+		margin-bottom: 36px;
 
 	}
 
@@ -37,12 +44,20 @@
 
 		padding-bottom: 34px;
 		margin-left: 90px;
+		flex-shrink: 0;
 
 		@media $lgWidth {
 
 			padding-left: 84px;
 			padding-bottom: 55px;
 			margin-left: 0;
+
+		}
+
+		@media $mdWidth {
+
+			margin-left: 32px;
+			padding-bottom: 20px;
 
 		}
 
@@ -67,8 +82,16 @@
 
 			@media $mdWidth {
 
-				width: auto;
-				height: auto;
+				width: 356px;
+				height: 356px;
+				left: 12px;
+
+			}
+
+			@media $smWidth {
+
+				width: 306px;
+				height: 306px;
 
 			}
 
@@ -78,7 +101,7 @@
 
 	&__title {
 
-		margin-bottom: 16px;
+
 
 	}
 
@@ -95,6 +118,13 @@
 
 		}
 
+		@media $mdWidth {
+
+			font-size: 18px;
+			margin: 12px 0;
+
+		}
+
 	}
 
 	&__btn {
@@ -105,6 +135,12 @@
 		@media $lgWidth {
 
 			margin-top: 72px;
+
+		}
+
+		@media $mdWidth {
+
+			margin-top: 40px;
 
 		}
 
@@ -125,7 +161,7 @@
 
 		@media $lgWidth {
 
-			left: 0;
+			left: 84px;
 			bottom: 10px;
 
 		}
@@ -140,9 +176,16 @@
 
 		}
 
-		@media $lgWidth {
+		@media $mdWidth {
 
-			left: 84px;
+			left: 32px;
+
+			svg {
+
+				width: 16px;
+				height: 52px;
+
+			}
 
 		}
 

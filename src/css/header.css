@@ -7,6 +7,18 @@
 	right: 0;
 	z-index: 1;
 
+	@media $mdWidth {
+
+		padding: 24px 0;
+
+		.center {
+
+			width: 100%;
+
+		}
+
+	}
+
 	&__flex {
 
 		display: flex;
@@ -27,6 +39,12 @@
 
 		}
 
+		@media $mdWidth {
+
+			font-size: 27px;
+
+		}
+
 	}
 
 	&__menu {
@@ -35,6 +53,12 @@
 		align-items: center;
 		margin-top: 5px;
 
+		@media $mdWidth {
+
+			margin-top: 2px;
+
+		}
+
 		li {
 
 			margin-left: 48px;
@@ -42,6 +66,12 @@
 			@media $lgWidth {
 
 				margin-left: 52px;
+
+			}
+
+			@media $mdWidth {
+
+				margin-left: 36px;
 
 			}
 
@@ -57,6 +87,12 @@
 
 			}
 
+			@media $mdWidth {
+
+				font-size: 14px;
+
+			}
+
 		}
 
 		a {
@@ -68,6 +104,12 @@
 					color: var(--orange);
 
 				}
+
+			}
+
+			@media $mdWidth {
+
+				font-size: 14px;
 
 			}
 

@@ -37,8 +37,8 @@ body {
 	overflow-y: scroll;
 	position: relative;
 	background-color: var(--bg);
-/* background-image: url(/css/1.png); */
-background-position: center 0px;
+/* background-image: url(/css/768.png); */
+background-position: center -120px;
 
 	@media $lgWidth {
 

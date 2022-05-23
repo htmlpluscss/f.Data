@@ -6,12 +6,27 @@
 
 		margin-bottom: var(--gap);
 
+		@media $mdWidth {
+
+			margin-top: 128px;
+
+		}
+
 	}
 
 	&__intro {
 
 		font-weight: 300;
-		margin-left: 2px;
+
+		@media $mdWidth {
+
+			br {
+
+				display: none;
+
+			}
+
+		}
 
 	}
 
@@ -19,6 +34,12 @@
 
 		display: flex;
 		justify-content: space-between;
+
+		@media $mdWidth {
+
+			display: block;
+
+		}
 
 	}
 
@@ -31,6 +52,13 @@
 		@media $lgWidth {
 
 			width: 460px;
+
+		}
+
+		@media $mdWidth {
+
+			width: auto;
+			text-align: center;
 
 		}
 
@@ -47,6 +75,21 @@
 		@media $lgWidth {
 
 			width: 772px;
+
+		}
+
+		@media $mdWidth {
+
+			width: auto;
+			display: block;
+			text-align: center;
+
+			&::after,
+			br {
+
+				display: none;
+
+			}
 
 		}
 
@@ -136,6 +179,14 @@
 
 		}
 
+		@media $mdWidth {
+
+			padding-bottom: 24px;
+			margin-bottom: 32px;
+			border-bottom: 1px solid var(--border);
+
+		}
+
 		dt {
 
 			margin-bottom: 8px;
@@ -166,13 +217,15 @@
 
 			}
 
+			@media $mdWidth {
+
+				margin: 24px auto;
+				width: 40px;
+				height: 40px;
+
+			}
+
 		}
-
-	}
-
-	&__btn {
-
-		margin-top: 60px;
 
 	}
 

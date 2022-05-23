@@ -8,6 +8,12 @@
 		display: flex;
 		justify-content: space-between;
 
+		@media $mdWidth {
+
+			display: block;
+
+		}
+
 	}
 
 	&__content {
@@ -19,6 +25,13 @@
 		@media $lgWidth {
 
 			width: 562px;
+
+		}
+
+		@media $mdWidth {
+
+			text-align: center;
+			width: 100%;
 
 		}
 
@@ -63,6 +76,19 @@
 
 				width: auto;
 				height: auto;
+
+			}
+
+		}
+
+		@media $mdWidth {
+
+			margin-top: 64px;
+
+			img {
+
+				width: 640px;
+				height: 360px;
 
 			}
 

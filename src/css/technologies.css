@@ -44,6 +44,12 @@
 
 		}
 
+		@media $mdWidth {
+
+			padding: 48px;
+
+		}
+
 		&::after {
 
 			position: absolute;
@@ -71,12 +77,25 @@
 
 		}
 
+		@media $mdWidth {
+
+			text-align: center;
+			margin-bottom: 40px;
+
+		}
+
 	}
 
 	&__flex {
 
 		display: flex;
 		justify-content: space-between;
+
+		@media $mdWidth {
+
+			flex-direction: column-reverse;
+
+		}
 
 	}
 
@@ -88,6 +107,12 @@
 		@media $lgWidth {
 
 			width: 552px;
+
+		}
+
+		@media $mdWidth {
+
+			width: 100%;
 
 		}
 
@@ -142,6 +167,13 @@
 
 			}
 
+			@media $mdWidth {
+
+				width: 40px;
+				height: 40px;
+
+			}
+
 		}
 
 	}
@@ -151,6 +183,26 @@
 		display: flex;
 		justify-content: flex-end;
 		margin: 20px 0;
+
+		&-tablet {
+
+			display: none;
+
+		}
+
+		@media $mdWidth {
+
+			display: none;
+
+			&-tablet {
+
+				display: flex;
+				justify-content: center;
+				margin-top: 40px;
+
+			}
+
+		}
 
 	}
 
@@ -171,8 +223,9 @@
 
 			@media $mdWidth {
 
-				width: auto;
-				height: auto;
+				width: 362px;
+				height: 362px;
+				margin: -16px auto 42px;
 
 			}
 

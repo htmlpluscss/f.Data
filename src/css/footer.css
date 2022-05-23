@@ -6,10 +6,29 @@
 	font-weight: 300;
 	font-size: 16px;
 
+	@media $mdWidth {
+
+		margin: 128px 0 48px;
+
+	}
+
 	&__flex {
 
-		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 370px 2fr 3fr auto;
+		grid-template-rows: 72px auto;
+		grid-template-areas: "logo menu contact social"
+							 "copyright menu contact social";
+
+		@media $mdWidth {
+
+			gap: 20px;
+			grid-template-columns: 204px 1fr 224px;
+			grid-template-rows: auto auto;
+			grid-template-areas: "logo menu contact"
+								 "copyright empty social";
+
+		}
 
 	}
 
@@ -18,7 +37,7 @@
 		font-weight: 800;
 		font-size: 36px;
 		line-height: 1.2;
-		margin-bottom: 28px;
+		grid-area: logo;
 
 		span {
 
@@ -26,15 +45,38 @@
 
 		}
 
+		@media $mdWidth {
+
+			font-size: 27px;
+
+		}
+
 	}
 
-	&__first {
+	&__copyright {
+
+		display: flex;
+		flex-direction: column-reverse;
+		grid-area: copyright;
+		gap: 8px;
+
+		@media $mdWidth {
+
+			gap: 11px;
+
+		}
 
 		p {
 
 			color: rgba(37, 37, 37, .5);
 			font-size: 15px;
-			margin-top: 8px;
+
+			@media $mdWidth {
+
+				font-size: 12px;
+				color: var(--color);
+
+			}
 
 		}
 
@@ -59,7 +101,13 @@
 
 	&__menu {
 
-		min-width: 256px;
+		grid-area: menu;
+
+		@media $mdWidth {
+
+			font-size: 14px;
+
+		}
 
 		li + li {
 
@@ -72,6 +120,12 @@
 			font-size: 16px;
 			line-height: 26px;
 			height: 26px;
+
+			@media $mdWidth {
+
+				font-size: 14px;
+
+			}
 
 		}
 
@@ -93,6 +147,14 @@
 
 	&__contact {
 
+		grid-area: contact;
+
+		@media $mdWidth {
+
+			font-size: 14px;
+
+		}
+
 		p + p {
 
 			margin-top: 8px;
@@ -103,9 +165,16 @@
 
 	&__social {
 
+		grid-area: social;
+
 		display: flex;
 		gap: 24px;
-		margin-left: 18px;
+
+		@media $mdWidth {
+
+			gap: 20px;
+
+		}
 
 		a {
 
@@ -125,6 +194,13 @@
 					fill: var(--orange);
 
 				}
+
+			}
+
+			@media $mdWidth {
+
+				width: 44px;
+				height: 44px;
 
 			}
 

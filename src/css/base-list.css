@@ -14,6 +14,12 @@
 
 		}
 
+		@media $mdWidth {
+
+			gap: 24px;
+
+		}
+
 	}
 
 	li {
@@ -36,6 +42,15 @@
 			font-size: 32px;
 			height: 168px;
 			padding: 0 68px;
+
+		}
+
+		@media $mdWidth {
+
+			font-size: 20px;
+			height: 88px;
+			padding: 0 24px;
+			border-radius: 24px;
 
 		}
 
@@ -108,6 +123,14 @@
 			@media $lgWidth {
 
 				margin-right: 48px;
+
+			}
+
+			@media $mdWidth {
+
+				margin-right: 24px;
+				width: 40px;
+				height: 40px;
 
 			}
 

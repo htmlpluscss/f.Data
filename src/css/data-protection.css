@@ -18,6 +18,15 @@
 
 		}
 
+		@media $mdWidth {
+
+			padding: 48px;
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-items: center;
+
+		}
+
 	}
 
 	&__bg {
@@ -35,10 +44,18 @@
 
 		width: 780px;
 		flex-shrink: 0;
+		position: relative;
 
 		@media $lgWidth {
 
 			width: 848px;
+
+		}
+
+		@media $mdWidth {
+
+			width: 100%;
+			text-align: center;
 
 		}
 
@@ -54,12 +71,28 @@
 
 		}
 
+		@media $mdWidth {
+
+			margin-top: 32px;
+			display: flex;
+			justify-content: center;
+
+		}
+
 	}
 
 	&__img {
 
 		align-self: flex-end;
 		justify-content: flex-end;
+
+		@media $mdWidth {
+
+			justify-content: center;
+			align-self: center;
+			margin: -24px 0 24px;
+
+		}
 
 		img {
 
@@ -76,8 +109,9 @@
 
 			@media $mdWidth {
 
-				width: auto;
-				height: auto;
+				width: 98px;
+				height: 98px;
+				left: 0;
 
 			}
 

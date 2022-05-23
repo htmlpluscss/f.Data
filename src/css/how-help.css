@@ -3,10 +3,6 @@
 	margin: var(--space) 0;
 	position: relative;
 
-	@media $lgWidth {
-
-	}
-
 	&::before {
 
 		position: absolute;
@@ -41,6 +37,13 @@
 
 		}
 
+		@media $mdWidth {
+
+			max-width: 470px;
+			font-size: 14px;
+
+		}
+
 	}
 
 	&__box {
@@ -51,6 +54,12 @@
 		@media $lgWidth {
 
 			margin-top: 70px;
+
+		}
+
+		@media $mdWidth {
+
+			margin-top: 38px;
 
 		}
 
@@ -69,6 +78,13 @@
 
 		}
 
+
+		@media $mdWidth {
+
+			display: block;
+
+		}
+
 	}
 
 	&__item {
@@ -84,6 +100,14 @@
 
 			padding-left: 160px;
 			min-height: 120px;
+
+		}
+
+		@media $mdWidth {
+
+			padding-left: 112px;
+			min-height: 80px;
+			margin-top: 32px;
 
 		}
 
@@ -124,6 +148,13 @@
 
 		}
 
+		@media $mdWidth {
+
+			width: 80px;
+			height: 80px;
+
+		}
+
 		svg {
 
 			fill: var(--orange);
@@ -133,20 +164,6 @@
 				stroke: var(--orange);
 
 			}
-
-		}
-
-	}
-
-	&__btn {
-
-		position: absolute;
-		right: 0;
-		bottom: 0;
-
-		@media $lgWidth {
-
-			bottom: 20px;
 
 		}
 
