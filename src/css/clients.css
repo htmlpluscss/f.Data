@@ -12,12 +12,6 @@
 
 		}
 
-		@media $mdWidth {
-
-			margin-top: 128px;
-
-		}
-
 	}
 
 	&__cite {
@@ -31,6 +25,12 @@
 		@media $lgWidth {
 
 			margin-bottom: var(--gap);
+
+		}
+
+		@media $smWidth {
+
+			margin-bottom: 24px;
 
 		}
 
@@ -70,6 +70,12 @@
 
 			}
 
+			@media $smWidth {
+
+				font-size: 14px;
+
+			}
+
 			b {
 
 				display: block;
@@ -86,6 +92,12 @@
 				@media $mdWidth {
 
 					margin-top: 12px;
+
+				}
+
+				@media $smWidth {
+
+					margin: 20px 0 2px;
 
 				}
 

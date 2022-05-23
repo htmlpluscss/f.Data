@@ -249,6 +249,12 @@
 
 	&__img {
 
+		@media $smWidth {
+
+			margin: 0 -20px;
+
+		}
+
 		img {
 
 			margin-top: 62px;
@@ -275,6 +281,7 @@
 				width: 304px;
 				height: 304px;
 				max-width: 100%;
+				margin-bottom: 34px;
 
 			}
 
