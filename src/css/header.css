@@ -37,13 +37,25 @@
 
 		li {
 
-			margin-left: 52px;
+			margin-left: 48px;
+
+			@media $lgWidth {
+
+				margin-left: 52px;
+
+			}
 
 		}
 
 		.btn {
 
-			font-size: 18px;
+			font-size: 16px;
+
+			@media $lgWidth {
+
+				font-size: 18px;
+
+			}
 
 		}
 

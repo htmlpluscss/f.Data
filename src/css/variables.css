@@ -16,14 +16,14 @@
 
 	--box-shadow: 0 12px 24px rgba(246, 240, 248, 0.8);
 
-	--indent: 40px;
+	--indent: 80px;
 	--gap: 24px;
-	--space: 200px;
+	--space: 150px;
 
 }
 
 $desktop: (min-width: 1250px);
-$lgWidth: (min-width: 1337px);
+$lgWidth: (min-width: 1500px);
 $mdWidth: (max-width: 1249px);
 $smWidth: (max-width: 767px);
 $xsWidth: (max-width: 359px);

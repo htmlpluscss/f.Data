@@ -5,11 +5,18 @@
 		background-color: #fff;
 		box-shadow: var(--box-shadow);
 		border-radius: 32px;
-		padding: 60px 80px 64px;
+		padding: 48px 68px;
 		position: relative;
 		overflow: hidden;
 		display: flex;
 		justify-content: space-between;
+
+		@media $lgWidth {
+
+			border-radius: 32px;
+			padding: 60px 80px 64px;
+
+		}
 
 	}
 
@@ -26,13 +33,26 @@
 
 	&__content {
 
-		width: 848px;
+		width: 780px;
+		flex-shrink: 0;
+
+		@media $lgWidth {
+
+			width: 848px;
+
+		}
 
 	}
 
 	&__btn {
 
-		margin-top: 48px;
+		margin-top: 40px;
+
+		@media $lgWidth {
+
+			margin-top: 48px;
+
+		}
 
 	}
 
@@ -43,8 +63,23 @@
 
 		img {
 
-			top: 32px;
-			left: 32px;
+			left: 20px;
+
+			@media $lgWidth {
+
+				top: 32px;
+				left: 32px;
+				width: auto;
+				height: auto;
+
+			}
+
+			@media $mdWidth {
+
+				width: auto;
+				height: auto;
+
+			}
 
 		}
 

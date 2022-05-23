@@ -1,8 +1,14 @@
 .first-screen {
 
 	position: relative;
-	padding: 80px 0;
-	margin-bottom: 44px;
+	padding: 75px 0;
+	margin-bottom: 48px;
+
+	@media $lgWidth {
+
+		margin-top: 5px;
+
+	}
 
 	&::before {
 
@@ -29,11 +35,14 @@
 
 	&__content {
 
-		padding-bottom: 54px;
+		padding-bottom: 34px;
+		margin-left: 90px;
 
 		@media $lgWidth {
 
 			padding-left: 84px;
+			padding-bottom: 55px;
+			margin-left: 0;
 
 		}
 
@@ -41,11 +50,25 @@
 
 	&__img {
 
+		width: 332px;
+		position: relative;
+
 		img {
+
+			left: 28px;
 
 			@media $lgWidth {
 
 				left: 103px;
+				width: auto;
+				height: auto;
+
+			}
+
+			@media $mdWidth {
+
+				width: auto;
+				height: auto;
 
 			}
 
@@ -63,15 +86,27 @@
 
 		margin: 16px 0;
 		font-weight: 500;
-		font-size: 32px;
+		font-size: 28px;
 		line-height: 1.25;
+
+		@media $lgWidth {
+
+			font-size: 32px;
+
+		}
 
 	}
 
 	&__btn {
 
-		margin-top: 72px;
+		margin-top: 56px;
 		display: flex;
+
+		@media $lgWidth {
+
+			margin-top: 72px;
+
+		}
 
 		.btn {
 
@@ -84,9 +119,16 @@
 	&__next {
 
 		position: absolute;
-		left: 0;
-		bottom: 11px;
+		left: 90px;
+		bottom: 0;
 		opacity: .16;
+
+		@media $lgWidth {
+
+			left: 0;
+			bottom: 10px;
+
+		}
 
 		@media $desktop {
 

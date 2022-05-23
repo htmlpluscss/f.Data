@@ -3,6 +3,10 @@
 	margin: var(--space) 0;
 	position: relative;
 
+	@media $lgWidth {
+
+	}
+
 	&::before {
 
 		position: absolute;
@@ -26,17 +30,29 @@
 
 	&__intro {
 
-		max-width: 600px;
+		max-width: 540px;
 		font-weight: 300;
 		margin: auto;
 		text-align: center;
+
+		@media $lgWidth {
+
+			max-width: 600px;
+
+		}
 
 	}
 
 	&__box {
 
 		position: relative;
-		margin-top: 70px;
+		margin-top: 65px;
+
+		@media $lgWidth {
+
+			margin-top: 70px;
+
+		}
 
 	}
 
@@ -45,18 +61,31 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: flex-start;
-		gap: 60px 64px;
+		gap: 40px 50px;
+
+		@media $lgWidth {
+
+			gap: 60px 64px;
+
+		}
 
 	}
 
 	&__item {
 
-		padding-left: 160px;
+		padding-left: 128px;
 		position: relative;
-		min-height: 120px;
+		min-height: 96px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		@media $lgWidth {
+
+			padding-left: 160px;
+			min-height: 120px;
+
+		}
 
 		dt {
 
@@ -79,14 +108,21 @@
 		left: 0;
 		bottom: 0;
 		margin: auto;
-		width: 120px;
-		height: 120px;
+		width: 96px;
+		height: 96px;
 		background-color: #fff;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		box-shadow: var(--box-shadow);
 		border-radius: 32px;
+
+		@media $lgWidth {
+
+			width: 120px;
+			height: 120px;
+
+		}
 
 		svg {
 
@@ -106,7 +142,13 @@
 
 		position: absolute;
 		right: 0;
-		bottom: 20px;
+		bottom: 0;
+
+		@media $lgWidth {
+
+			bottom: 20px;
+
+		}
 
 	}
 

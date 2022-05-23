@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-color: var(--red) !important;
+/* color: var(--red) !important; */
 }
 
 html {
@@ -25,7 +25,7 @@ body {
 
 	min-width: 320px;
 	color: var(--color);
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.6;
 	font-family: 'Montserrat', sans-serif;
 	-webkit-text-size-adjust: none;
@@ -37,8 +37,21 @@ body {
 	overflow-y: scroll;
 	position: relative;
 	background-color: var(--bg);
-background-image: url(/css/1250.png);
-background-position: center -0px;
+/* background-image: url(/css/1.png); */
+background-position: center 0px;
+
+	@media $lgWidth {
+
+		font-size: 18px;
+
+	}
+
+	@media $smWidth {
+
+		font-size: 14px;
+
+	}
+
 }
 
 a {
@@ -89,24 +102,71 @@ li {
 .h1 {
 
 	font-weight: 800;
-	font-size: 68px;
-	line-height: 83px;
+	font-size: 60px;
+	line-height: 73px;
+
+	@media $lgWidth {
+
+		font-size: 68px;
+		line-height: 83px;
+
+	}
+
+	@media $mdWidth {
+
+		font-size: 36px;
+		line-height: 44px;
+
+	}
+
+	@media $smWidth {
+
+		font-size: 38px;
+		line-height: 46px;
+
+	}
 
 }
 
 .h2 {
 
 	font-weight: 800;
-	font-size: 52px;
-	line-height: 63px;
+	font-size: 48px;
+	line-height: 59px;
+
+	@media $lgWidth {
+
+		font-size: 52px;
+		line-height: 63px;
+
+	}
+
+	@media $mdWidth {
+
+		font-size: 32px;
+		line-height: 39px;
+
+	}
 
 }
 
 .h3 {
 
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.6;
+
+	@media $lgWidth {
+
+		font-size: 24px;
+
+	}
+
+	@media $smWidth {
+
+		line-height: 1.3;
+
+	}
 
 }
 

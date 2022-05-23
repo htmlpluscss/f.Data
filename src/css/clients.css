@@ -24,9 +24,15 @@
 
 	&__content {
 
-		width: 460px;
+		width: 400px;
 		flex-shrink: 0;
 		margin: 32px 0;
+
+		@media $lgWidth {
+
+			width: 460px;
+
+		}
 
 	}
 
@@ -34,9 +40,15 @@
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		width: 772px;
+		width: 612px;
 		position: relative;
 		margin-top: 44px;
+
+		@media $lgWidth {
+
+			width: 772px;
+
+		}
 
 		&::after {
 
@@ -62,9 +74,42 @@
 
 			&:nth-child(1) {
 
+				padding-right: 20px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid var(--border);
+
+			}
+
+			&:nth-child(2) {
+
+				padding-left: 20px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid var(--border);
+
+			}
+
+			&:nth-child(3) {
+
+				padding-right: 20px;
+				padding-top: 20px;
+
+			}
+
+			&:nth-child(4) {
+
+				padding-left: 20px;
+				padding-top: 20px;
+
+			}
+
+		}
+
+		@media $lgWidth {
+
+			&:nth-child(1) {
+
 				padding-right: 30px;
 				padding-bottom: 30px;
-				border-bottom: 1px solid var(--border);
 
 			}
 
@@ -72,7 +117,6 @@
 
 				padding-left: 30px;
 				padding-bottom: 30px;
-				border-bottom: 1px solid var(--border);
 
 			}
 
@@ -107,12 +151,18 @@
 		svg {
 
 			fill: var(--purpule);
-			margin-bottom: 40px;
+			margin-bottom: 28px;
 
 			[stroke-width] {
 
 				stroke: var(--purpule);
 				fill: none;
+
+			}
+
+			@media $lgWidth {
+
+				margin-bottom: 40px;
 
 			}
 

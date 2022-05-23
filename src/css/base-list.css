@@ -1,20 +1,28 @@
 .base-list {
 
+	scroll-margin: var(--gap);
+
 	ul {
 
 		display: grid;
-		gap: 40px;
+		gap: 32px;
 		grid-template-columns: 1fr 1fr;
+
+		@media $lgWidth {
+
+			gap: 40px;
+
+		}
 
 	}
 
 	li {
 
-		height: 168px;
+		height: 136px;
 		font-weight: 500;
-		font-size: 32px;
+		font-size: 28px;
 		line-height: 1.25;
-		padding: 0 68px;
+		padding: 0 52px;
 		display: flex;
 		align-items: center;
 		background-color: #fff;
@@ -22,6 +30,14 @@
 		border-radius: 32px;
 		background-repeat: no-repeat;
 		background-size: auto 100%;
+
+		@media $lgWidth {
+
+			font-size: 32px;
+			height: 168px;
+			padding: 0 68px;
+
+		}
 
 		&:nth-child(1) {
 
@@ -85,14 +101,18 @@
 
 		svg {
 
-			margin-right: 48px;
+			margin-right: 44px;
 			flex-shrink: 0;
 			fill: none;
+
+			@media $lgWidth {
+
+				margin-right: 48px;
+
+			}
 
 		}
 
 	}
-
-
 
 }
