@@ -7,11 +7,10 @@
 
 .center {
 
-	width: calc(1320px + var(--indent) + var(--indent));
+	width: 1090px;
 	max-width: 100%;
 	margin: 0 auto;
 	position: relative;
-	padding: 0 var(--indent);
 
 }
 
@@ -20,6 +19,12 @@
 }
 
 @media $lgWidth {
+
+	.center {
+
+		width: 1320px;
+
+	}
 
 	:root {
 
@@ -33,7 +38,7 @@
 
 	:root {
 
-		--indent: 80px;
+		--indent: 64px;
 		--gap: 16px;
 		--space: 128px;
 
@@ -53,7 +58,8 @@
 
 	.center {
 
-		width: 768px;
+		width: 640px;
+		padding: 0 var(--indent);
 
 	}
 
@@ -83,7 +89,7 @@
 
 	.center {
 
-		width: 600px;
+		width: 540px;
 
 	}
 
