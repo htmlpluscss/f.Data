@@ -37,8 +37,8 @@ body {
 	overflow-y: scroll;
 	position: relative;
 	background-color: var(--bg);
-background-image: url(/css/2.png);
-background-position: center 0px;
+background-image: url(/css/4.png);
+background-position: center -0px;
 
 	@media $lgWidth {
 
@@ -209,5 +209,11 @@ li {
 
 	clip: rect(0 0 0 0) !important;
 	overflow: hidden !important;
+
+}
+
+.nowrap {
+
+	white-space: nowrap;
 
 }

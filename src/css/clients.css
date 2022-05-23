@@ -4,7 +4,13 @@
 
 	&__title {
 
-		margin-bottom: 38px;
+		margin-bottom: 32px;
+
+		@media $lgWidth {
+
+			margin-bottom: 38px;
+
+		}
 
 		@media $mdWidth {
 
@@ -19,25 +25,69 @@
 		font-style: normal;
 		font-weight: 300;
 		position: relative;
-		margin-bottom: var(--gap);
+		margin-bottom: 20px;
 		display: block;
+
+		@media $lgWidth {
+
+			margin-bottom: var(--gap);
+
+		}
 
 		figure {
 
 			display: flex;
 
+			@media $mdWidth {
+
+				display: block;
+				text-align: center;
+
+			}
+
 		}
 
 		figcaption {
 
-			margin-left: 32px;
+			margin-left: 24px;
+
+			@media $lgWidth {
+
+				margin-right: 32px;
+
+			}
+
+			@media $mdWidth {
+
+				margin: 0;
+				font-size: 16px;
+
+				br {
+
+					display: none;
+
+				}
+
+			}
 
 			b {
 
 				display: block;
-				margin-bottom: 2px;
-				font-size: 24px;
+				font-size: 20px;
 				font-weight: 600;
+
+				@media $lgWidth {
+
+					font-size: 24px;
+					margin-bottom: 2px;
+
+				}
+
+				@media $mdWidth {
+
+					margin-top: 12px;
+
+				}
 
 			}
 
@@ -66,6 +116,7 @@
 
 				width: 68px;
 				height: 68px;
+				margin: auto;
 
 			}
 

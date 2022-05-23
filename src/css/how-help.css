@@ -169,7 +169,40 @@
 
 	&__schema {
 
-		margin: 115px 0 0;
+		margin-top: 97px;
+
+		svg {
+
+			width: 1082px;
+			height: 456px;
+
+		}
+
+		@media $lgWidth {
+
+			margin-top: 115px;
+
+			svg {
+
+				width: 100%;
+				height: 556px;
+
+			}
+
+		}
+
+		@media $mdWidth {
+
+			margin-top: 94px;
+
+			svg {
+
+				width: 100%;
+				height: 270px;
+
+			}
+
+		}
 
 	}
 
