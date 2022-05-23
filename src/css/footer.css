@@ -12,6 +12,12 @@
 
 	}
 
+	@media $smWidth {
+
+		margin: 32px 0 32px;
+
+	}
+
 	&__flex {
 
 		display: grid;
@@ -27,6 +33,12 @@
 			grid-template-rows: auto auto;
 			grid-template-areas: "logo menu contact"
 								 "copyright empty social";
+
+		}
+
+		@media $smWidth {
+
+			display: block;
 
 		}
 
@@ -51,6 +63,14 @@
 
 		}
 
+		@media $smWidth {
+
+			font-size: 36px;
+			text-align: center;
+			margin-bottom: 32px;
+
+		}
+
 	}
 
 	&__copyright {
@@ -66,6 +86,14 @@
 
 		}
 
+		@media $smWidth {
+
+			display: block;
+			text-align: center;
+			margin-top: 32px;
+
+		}
+
 		p {
 
 			color: rgba(37, 37, 37, .5);
@@ -74,7 +102,13 @@
 			@media $mdWidth {
 
 				font-size: 12px;
-				color: var(--color);
+
+			}
+
+			@media $smWidth {
+
+				font-size: 15px;
+				margin-top: 16px;
 
 			}
 
@@ -106,6 +140,12 @@
 		@media $mdWidth {
 
 			font-size: 14px;
+
+		}
+
+		@media $smWidth {
+
+			display: none;
 
 		}
 
@@ -155,6 +195,19 @@
 
 		}
 
+		@media $smWidth {
+
+			text-align: center;
+			font-size: 16px;
+
+			p + p {
+
+				margin-top: 16px;
+
+			}
+
+		}
+
 		p + p {
 
 			margin-top: 8px;
@@ -173,6 +226,14 @@
 		@media $mdWidth {
 
 			gap: 20px;
+
+		}
+
+		@media $smWidth {
+
+			gap: 24px;
+			justify-content: center;
+			margin: 32px 0;
 
 		}
 
@@ -201,6 +262,13 @@
 
 				width: 44px;
 				height: 44px;
+
+			}
+
+			@media $smWidth {
+
+				width: 48px;
+				height: 48px;
 
 			}
 

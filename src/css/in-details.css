@@ -94,6 +94,41 @@
 
 		}
 
+		@media $smWidth {
+
+			margin-top: 40px;
+
+			img {
+
+				width: 100%;
+				height: 171px;
+				object-fit: cover;
+
+			}
+
+			&::after {
+
+				border-radius: 21px;
+				top: -12px;
+				left: -12px;
+
+			}
+
+			a {
+
+				border-radius: 16px;
+
+				svg {
+
+					width: 56px;
+					height: 56px;
+
+				}
+
+			}
+
+		}
+
 		&::after {
 
 			position: absolute;

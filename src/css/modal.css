@@ -46,10 +46,16 @@
 
 		&--video {
 
-			padding: 0 0 56.25%;
+			padding: 0 0 56.25% !important;
 			border-radius: 0;
 			width: 960px;
 			height: 0;
+
+			@media $smWidth {
+
+				margin: 50px 0 0;
+
+			}
 
 			iframe {
 
@@ -64,10 +70,6 @@
 
 		}
 
-		@media $smWidth {
-
-		}
-
 	}
 
 	&__item--video:not(.visuallyhidden) ~ &__close-btn {
@@ -75,6 +77,13 @@
 		top: -32px;
 		right: -32px;
 		--color: #fff;
+
+		@media $smWidth {
+
+			top: 10px;
+			right: 10px;
+
+		}
 
 	}
 

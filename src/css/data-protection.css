@@ -27,6 +27,19 @@
 
 		}
 
+		@media $smWidth {
+
+			padding: 40px 24px;
+			margin: 0 -9px;
+
+		}
+
+		@media $xsWidth {
+
+			border-radius: 0;
+
+		}
+
 	}
 
 	&__bg {
@@ -79,6 +92,18 @@
 
 		}
 
+		@media $smWidth {
+
+			margin: 40px -12px 0;
+
+			.btn {
+
+				width: 100%;
+
+			}
+
+		}
+
 	}
 
 	&__img {
@@ -112,6 +137,13 @@
 				width: 98px;
 				height: 98px;
 				left: 0;
+
+			}
+
+			@media $smWidth {
+
+				width: 142px;
+				height: 142px;
 
 			}
 

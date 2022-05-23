@@ -50,6 +50,25 @@
 
 		}
 
+		@media $smWidth {
+
+			padding: 40px 24px;
+			margin: 0 -9px;
+
+			&::after {
+
+				display: none;
+
+			}
+
+		}
+
+		@media $xsWidth {
+
+			border-radius: 0;
+
+		}
+
 		&::after {
 
 			position: absolute;
@@ -129,6 +148,12 @@
 
 		}
 
+		@media $smWidth {
+
+			padding-left: 64px;
+
+		}
+
 		& + & {
 
 			margin-top: 32px;
@@ -204,6 +229,22 @@
 
 		}
 
+		@media $smWidth {
+
+			&-tablet {
+
+				margin: 40px -12px 0;
+
+				.btn {
+
+					width: 100%;
+
+				}
+
+			}
+
+		}
+
 	}
 
 	&__img {
@@ -226,6 +267,14 @@
 				width: 362px;
 				height: 362px;
 				margin: -16px auto 42px;
+
+			}
+
+			@media $smWidth {
+
+				width: 304px;
+				height: 304px;
+				max-width: 100%;
 
 			}
 

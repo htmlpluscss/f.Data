@@ -20,6 +20,12 @@
 
 		}
 
+		@media $smWidth {
+
+			display: block;
+
+		}
+
 	}
 
 	li {
@@ -51,6 +57,13 @@
 			height: 88px;
 			padding: 0 24px;
 			border-radius: 24px;
+
+		}
+
+		@media $smWidth {
+
+			margin: 20px 0;
+			border-radius: 20px;
 
 		}
 

@@ -78,7 +78,6 @@
 
 		}
 
-
 		@media $mdWidth {
 
 			display: block;
@@ -108,6 +107,14 @@
 			padding-left: 112px;
 			min-height: 80px;
 			margin-top: 32px;
+
+		}
+
+		@media $smWidth {
+
+			padding: 0;
+			text-align: center;
+			margin: 0;
 
 		}
 
@@ -152,6 +159,13 @@
 
 			width: 80px;
 			height: 80px;
+
+		}
+
+		@media $smWidth {
+
+			position: relative;
+			margin: 24px auto;
 
 		}
 

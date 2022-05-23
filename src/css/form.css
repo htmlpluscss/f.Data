@@ -101,6 +101,7 @@ legend {
 
 		display: grid;
 		align-items: center;
+		justify-content: center;
 		grid-auto-flow: column;
 		gap: 12px;
 		position: relative;
