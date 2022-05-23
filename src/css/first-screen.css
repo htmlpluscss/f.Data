@@ -17,6 +17,13 @@
 
 	}
 
+	@media $smWidth {
+
+		padding: 60px 0;
+		margin-bottom: 0;
+
+	}
+
 	&::before {
 
 		position: absolute;
@@ -30,6 +37,14 @@
 		background-position: top;
 		background-repeat: no-repeat;
 
+		@media $mdWidth {
+
+			top: 0;
+			height: 620px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='620' fill='none' viewBox='0 0 800 620'%3E%3Cg clip-path='url(%23a)'%3E%3Cg filter='url(%23b)' opacity='.12'%3E%3Cpath fill='%23DA87ED' d='M410 105.19c-17.2-34.65 12.08-43.66 28.86-43.83 58.7-.88 109 98 136.23 126.14 27.24 28.13 49.63 90.6 42.05 142.9-7.57 52.32-134.78 79.45-159.41 58.6-24.63-20.86-39.7-60.94-37.08-97.22 2.62-36.28 44.2-62.53 33.08-109.03-11.13-46.5-22.22-34.25-43.72-77.56Z'/%3E%3C/g%3E%3Cg filter='url(%23c)' opacity='.16'%3E%3Cpath fill='%23FF7433' d='M340.46 128.84c-51.04 32.99-68.17-47.25-70.35-91.5C285.36-89.6 380.8-94.71 411.05-45.87s-6.78 133.49-70.59 174.72Z'/%3E%3C/g%3E%3Cg filter='url(%23d)' opacity='.16'%3E%3Cpath fill='%23D976F0' d='M603.18 433.49c39.24 51.06-34.17 79.37-75.78 87.13-122.76-.94-142.5-103.34-100.9-141.97 41.6-38.63 127.64-9 176.68 54.84Z'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='b' width='613.87' height='734.69' x='204.77' y='-138.65' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_203_449' stdDeviation='100'/%3E%3C/filter%3E%3Cfilter id='c' width='351.65' height='411.09' x='170.11' y='-174.5' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_203_449' stdDeviation='50'/%3E%3C/filter%3E%3Cfilter id='d' width='407.63' height='359.24' x='306.74' y='261.39' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_203_449' stdDeviation='50'/%3E%3C/filter%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h800v620H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+
+		}
+
 	}
 
 	&__flex {
@@ -37,6 +52,12 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+
+		@media $smWidth {
+
+			flex-direction: column-reverse;
+
+		}
 
 	}
 
@@ -61,12 +82,26 @@
 
 		}
 
+		@media $smWidth {
+
+			text-align: center;
+			margin: 0;
+			padding: 0;
+
+		}
+
 	}
 
 	&__img {
 
 		width: 332px;
 		position: relative;
+
+		@media $smWidth {
+
+			width: auto;
+
+		}
 
 		img {
 
@@ -92,6 +127,7 @@
 
 				width: 306px;
 				height: 306px;
+				left: 0;
 
 			}
 
@@ -125,6 +161,12 @@
 
 		}
 
+		@media $smWidth {
+
+			font-size: 22px;
+
+		}
+
 	}
 
 	&__btn {
@@ -141,6 +183,18 @@
 		@media $mdWidth {
 
 			margin-top: 40px;
+
+		}
+
+		@media $smWidth {
+
+			margin-top: 36px;
+
+			.btn {
+
+				width: 100%;
+
+			}
 
 		}
 
@@ -186,6 +240,12 @@
 				height: 52px;
 
 			}
+
+		}
+
+		@media $smWidth {
+
+			display: none;
 
 		}
 

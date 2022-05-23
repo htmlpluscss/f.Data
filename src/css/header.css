@@ -45,6 +45,12 @@
 
 		}
 
+		@media $smWidth {
+
+			font-size: 32px;
+
+		}
+
 	}
 
 	&__menu {
@@ -56,6 +62,13 @@
 		@media $mdWidth {
 
 			margin-top: 2px;
+
+		}
+
+		@media $smWidth {
+
+			display: none;
+			width: 100%;
 
 		}
 
@@ -72,6 +85,20 @@
 			@media $mdWidth {
 
 				margin-left: 36px;
+
+			}
+
+			@media $smWidth {
+
+				margin: 20px 0;
+				display: flex;
+				justify-content: center;
+
+				&:last-child {
+
+					order: -1;
+
+				}
 
 			}
 
@@ -93,6 +120,15 @@
 
 			}
 
+			@media $smWidth {
+
+				font-weight: 700;
+				font-size: 22px;
+				line-height: 28px;
+				height: 28px;
+
+			}
+
 		}
 
 		a {
@@ -110,6 +146,121 @@
 			@media $mdWidth {
 
 				font-size: 14px;
+
+			}
+
+			@media $smWidth {
+
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 1.25;
+
+			}
+
+		}
+
+	}
+
+	&__contact {
+
+		display: none;
+
+	}
+
+	&__btn-menu {
+
+		display: none;
+
+		@media $smWidth {
+
+			position: absolute;
+			width: 32px;
+			height: 32px;
+			top: 4px;
+			right: 28px;
+			display: block;
+
+			path + path {
+
+				display: none;
+
+			}
+
+			svg {
+
+				stroke: var(--color);
+
+			}
+
+			.menu-show & path {
+
+				display: none;
+
+				& + path {
+
+					display: block;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media $smWidth {
+
+	.menu-show {
+
+		background-color: #fff;
+
+		.main,
+		.footer {
+
+			display: none;
+
+		}
+
+		.header {
+
+			display: flex;
+			flex-grow: 1;
+			position: relative;
+
+			.center,
+			&__flex {
+
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+
+			}
+
+			&__menu {
+
+				display: flex;
+				flex-direction: column;
+
+			}
+
+			&__contact {
+
+				display: flex;
+				gap: 12px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				padding: 20px 0;
+
+				a {
+
+					font-weight: 300;
+					font-size: 16px;
+
+				}
 
 			}
 

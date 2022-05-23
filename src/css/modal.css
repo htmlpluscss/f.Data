@@ -11,6 +11,7 @@
 
 	@media $smWidth {
 
+		padding: 0;
 
 	}
 
@@ -29,6 +30,13 @@
 		border-radius: 32px;
 		width: 576px;
 		position: relative;
+
+		@media $smWidth {
+
+			border-radius: 0;
+			padding: 92px 28px 40px;
+
+		}
 
 		&--ok {
 
@@ -76,9 +84,23 @@
 		top: 55px;
 		right: 60px;
 
+		@media $smWidth {
+
+			top: 28px;
+			right: 28px;
+
+		}
+
 		svg {
 
 			stroke: var(--color);
+
+			@media $smWidth {
+
+				width: 32px;
+				height: 32px;
+
+			}
 
 		}
 
@@ -183,6 +205,12 @@
 			z-index: 9;
 			opacity: .5;
 			background-color: var(--color);
+
+		}
+
+		@media $smWidth {
+
+			filter: blur(8px);
 
 		}
 
