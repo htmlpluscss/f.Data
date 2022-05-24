@@ -43,6 +43,34 @@
 		background-repeat: no-repeat;
 		background-size: auto 100%;
 
+		a {
+
+			&::after {
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				content: '';
+				border-radius: 32px;
+
+				@media $mdWidth {
+
+					border-radius: 24px;
+
+				}
+
+				@media $smWidth {
+
+					border-radius: 20px;
+
+				}
+
+			}
+
+		}
+
 		@media $lgWidth {
 
 			font-size: 32px;
