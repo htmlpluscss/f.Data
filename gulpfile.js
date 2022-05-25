@@ -42,13 +42,11 @@ const w3cjs            = require('gulp-w3cjs');
 let config             = null;
 
 const site             = 'f.Data';
-const domain           = 'fdata.htmlpluscss.website';
+const domain           = 'fdata.tech';
 
 try {
 
 	config           = require('./config.json');
-
-	config.ftp.remotePath = domain + config.ftp.remotePath;
 
 }catch(e){
 
@@ -181,7 +179,7 @@ gulp.task('ftp', () => {
 		.pipe(replace('css/styles.css', 'css/styles.min.css?' + Date.now()))
 		.pipe(replace('js/scripts.js', 'js/scripts.min.js?' + Date.now()))
 		.pipe(f.restore)
-        .pipe(conn.dest(domain));
+        .pipe(conn.dest(config.ftp.remotePath + domain));
 
 });
 
