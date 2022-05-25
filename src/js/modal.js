@@ -22,7 +22,7 @@
 
 		setTimeout( () => document.documentElement.classList.remove('scroll-behavior-off'), 500);
 
-		document.querySelector('#modal-video').innerHTML = '';
+		document.querySelector('#modal-video').pause();
 
 	});
 

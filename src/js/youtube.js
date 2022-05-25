@@ -1,37 +1,26 @@
-( youtube => {
+( box => {
 
-	if( youtube.length ) {
+	if( box ) {
 
-		const modalBox = document.querySelector('#modal-video');
+		const link = box.querySelector('a'),
+			  video = document.querySelector('#modal-video');
 
-		[...youtube].forEach( link => {
+		link.addEventListener('click', event => {
 
-			const id = link.getAttribute('data-youtube');
+			event.preventDefault();
 
-			link.addEventListener('click', event => {
-
-				event.preventDefault();
-
-				const iframe = document.createElement('iframe');
-
-				iframe.setAttribute('allowfullscreen', '');
-				iframe.setAttribute('allow', 'autoplay');
-				iframe.setAttribute('src', 'https://www.youtube.com/embed/' + id + '?rel=0&showinfo=0&autoplay=1');
-
-				modalBox.appendChild(iframe);
-
-				const eventModalShow = new CustomEvent("modalShow", {
-					detail: {
-						selector: "video"
-					}
-				});
-
-				window.modal.dispatchEvent(eventModalShow);
-
+			const eventModalShow = new CustomEvent("modalShow", {
+				detail: {
+					selector: "video"
+				}
 			});
+
+			window.modal.dispatchEvent(eventModalShow);
+
+			video.play();
 
 		});
 
 	}
 
-})(document.querySelectorAll('[data-youtube]'));
+})(document.querySelector('.in-details__video'));
