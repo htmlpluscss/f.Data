@@ -5,7 +5,7 @@
 
 $g_recaptcha_response = $_POST['g_recaptcha_response'];
 $g_recaptcha_response_check = false;
-$PRIVATE_KEY = '6Ldn0xggAAAAABtX7S6ZIxfIkAbFF9peEmb0Aywe';
+$PRIVATE_KEY = '';
 
 if (!empty($g_recaptcha_response)) {
 
