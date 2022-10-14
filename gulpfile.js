@@ -66,8 +66,10 @@ const html = (files, since = {}, folder = '') => {
 			},
 			path: 'src/'
 		}))
-//		.pipe(w3cjs())
-//		.pipe(w3cjs.reporter())
+		.pipe(w3cjs({
+			url : 'https://validator.w3.org/nu/'
+		}))
+		.pipe(w3cjs.reporter())
 		.pipe(gulp.dest('build' + folder))
 
 };
