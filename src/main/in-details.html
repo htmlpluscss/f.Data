@@ -7,18 +7,30 @@
 				<div class="in-details__content">
 
 					<h2 class="in-details__title h2">
-						f.Data в деталях
+
+						{% if lang === 'eng' %}
+				f.Data in details
+						{% else %}
+				f.Data в деталях
+						{% endif %}
+
 					</h2>
 
 					<p class="in-details__text">
-						f.Data автоматизирует все ваши процессы обработки финансовых данных с минимальной зависимостью от&nbsp;персонала. Наша инновационная платформа загружает и реконсилирует данные, обрабатывает исключения и&nbsp;определяет причины расхождений, вычисляет и аудирует ключевые метрики и показатели, строит кроссотчетность и&nbsp;аналитику.
+
+						{% if lang === 'eng' %}
+				f.Data automate financial data processing regardless of the number of personnel. Our innovative platform is uploading and reconciling any data, processing exceptions and identifing mismatches causes. Also data audit, complicated calculations, reporting and analytics available
+						{% else %}
+				f.Data автоматизирует все ваши процессы обработки финансовых данных с минимальной зависимостью от&nbsp;персонала. Наша инновационная платформа загружает и реконсилирует данные, обрабатывает исключения и&nbsp;определяет причины расхождений, вычисляет и аудирует ключевые метрики и показатели, строит кроссотчетность и&nbsp;аналитику.
+						{% endif %}
+
 					</p>
 
 				</div>
 
 				<div class="in-details__video">
 
-					<a href="/video.mp4" title="f.Data в деталях" target="_blank">
+					<a href="/video.mp4" title="{% if lang === 'eng' %}f.Data in details{% else %}f.Data в деталях{% endif %}" target="_blank">
 
 						<picture>
 
@@ -34,7 +46,7 @@
 							<source srcset="/img/in-details/545x306.webp 1x, /img/in-details/1090x612.webp 2x" type="image/webp">
 							<source srcset="/img/in-details/545x306.jpg 1x, /img/in-details/1090x612.jpg 2x">
 
-							<img src="/img/in-details/545x306.jpg" width="545" height="306" alt="f.Data в деталях" loading="lazy">
+							<img src="/img/in-details/545x306.jpg" width="545" height="306" alt="{% if lang === 'eng' %}f.Data in details{% else %}f.Data в деталях{% endif %}" loading="lazy">
 
 						</picture>
 

@@ -11,15 +11,15 @@
 				<ul class="footer__menu">
 
 					<li>
-						<button class="btn btn--text" type="button" data-modal="demo">Заказать демо</button>
+						<button class="btn btn--text" type="button" data-modal="demo">{% if lang === 'eng' %}Request demo{% else %}Заказать демо{% endif %}</button>
 					</li>
 
 					<li>
-						<a href="#technologies">Спецификация</a>
+						<a href="#technologies">{% if lang === 'eng' %}Specification{% else %}Спецификация{% endif %}</a>
 					</li>
 
 					<li>
-						<a href="#details">Видео-обзор</a>
+						<a href="#details">{% if lang === 'eng' %}What we do{% else %}Видео-обзор{% endif %}</a>
 					</li>
 
 				</ul>
@@ -50,7 +50,13 @@
 
 					<p>
 						<a href="/">
-							Политика конфиденциальности
+
+						{% if lang === 'eng' %}
+				Privacy Policy
+						{% else %}
+				Политика конфиденциальности
+						{% endif %}
+
 						</a>
 					</p>
 

@@ -12,7 +12,13 @@
 					</svg>
 
 					<a href="#details">
-						f.Data в деталях
+
+						{% if lang === 'eng' %}
+				f.Data in details
+						{% else %}
+				f.Data в деталях
+						{% endif %}
+
 					</a>
 
 				</li>
@@ -25,7 +31,13 @@
 					</svg>
 
 					<a href="#help">
-						Как мы помогаем Финансам
+
+						{% if lang === 'eng' %}
+				How we help to achieve finance excellence
+						{% else %}
+				Как мы помогаем Финансам
+						{% endif %}
+
 					</a>
 
 				</li>
@@ -38,7 +50,13 @@
 					</svg>
 
 					<a href="#technologies">
-						Наши технологии
+
+						{% if lang === 'eng' %}
+				Automation platform
+						{% else %}
+				Наши технологии
+						{% endif %}
+
 					</a>
 
 				</li>
@@ -55,7 +73,13 @@
 					</svg>
 
 					<a href="#clients">
-						Нашим клиентам
+
+						{% if lang === 'eng' %}
+				Software specification
+						{% else %}
+				Нашим клиентам
+						{% endif %}
+
 					</a>
 
 				</li>

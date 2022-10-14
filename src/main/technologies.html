@@ -8,11 +8,15 @@
 
 					<div class="technologies__btn-tablet">
 
-						<a class="btn btn--outline" href="/f.Data.pdf" target="_blank">
+						<a class="btn btn--outline" href="{% if lang === 'eng' %}/en{% endif %}/f.Data.pdf" target="_blank">
 
 							<span>
 
-								Спецификация
+						{% if lang === 'eng' %}
+				Specification
+						{% else %}
+				Спецификация
+						{% endif %}
 
 								<svg width="24" height="24" viewBox="0 0 24 24">
 									<path d="m12 16-.7.7.7.71.7-.7L12 16Zm1-12V3h-2v1h2Zm-7.7 6.7 6 6 1.4-1.4-6-6-1.4 1.4Zm7.4 6 6-6-1.4-1.4-6 6 1.4 1.4Zm.3-.7V4h-2v12h2ZM5 20h14v2H5v-2Z"/>
@@ -27,7 +31,13 @@
 					<div class="technologies__content">
 
 						<h2 class="technologies__title h2">
-							Наши Технологии
+
+						{% if lang === 'eng' %}
+				Наши Технологии
+						{% else %}
+				Наши Технологии
+						{% endif %}
+
 						</h2>
 
 						<dl class="technologies__list">
@@ -41,12 +51,24 @@
 										<path d="M30 14v1.5h1.5V14H30Zm.32-5.75-.92 1.18.92-1.18ZM44 19l.93 1.18 1.5-1.18-1.5-1.18L44 19ZM30.32 29.75l.93 1.18-.93-1.18ZM30 24h1.5v-1.5H30V24Zm-8-8.5h8v-3h-8v3Zm9.5-1.5V8.41h-3V14h3Zm-2.1-4.57 13.67 10.75 1.86-2.36L31.25 7.07 29.4 9.43Zm13.67 8.39L29.4 28.57l1.85 2.36 13.68-10.75-1.86-2.36ZM31.5 29.59V24h-3v5.59h3ZM30 22.5H18v3h12v-3Zm-.6 6.07a1.3 1.3 0 0 1 2.1 1.02h-3a1.7 1.7 0 0 0 2.75 1.34l-1.85-2.36ZM31.5 8.4a1.3 1.3 0 0 1-2.1 1.02l1.85-2.36a1.7 1.7 0 0 0-2.75 1.34h3Z"/>
 									</svg>
 
-									Загрузка и реконсиляция данных
+						{% if lang === 'eng' %}
+				Data uploading and matching
+						{% else %}
+				Загрузка и реконсиляция данных
+						{% endif %}
+
+
 
 								</dt>
 
 								<dd>
-									Поддержка любых форматов интеграций и&nbsp;файлов, гибкая настройка правил обработки&nbsp;данных
+
+						{% if lang === 'eng' %}
+				Support any data sources integration types and file formats (csv, xls, json etc), provide data processing rules “hot” adjustment without code
+						{% else %}
+				Поддержка любых форматов интеграций и&nbsp;файлов, гибкая настройка правил обработки&nbsp;данных
+						{% endif %}
+
 								</dd>
 
 							</div>
@@ -60,12 +82,22 @@
 										<path stroke-width="3" d="M11.82 8.13a20 20 0 0 1 5.1-2.84c.84-.31 1.26-.47 1.65-.27.4.2.52.67.77 1.6l4.14 15.45c.25.9.37 1.36.16 1.72-.2.36-.66.48-1.57.73L6.6 28.66c-.92.25-1.39.37-1.76.13-.37-.24-.44-.68-.59-1.57a20 20 0 0 1 7.56-19.09Z"/>
 									</svg>
 
-									Отчетность
+						{% if lang === 'eng' %}
+				Reporting
+						{% else %}
+				Отчетность
+						{% endif %}
 
 								</dt>
 
 								<dd>
-									Легко создавать отчеты и дашборды используя данные из всех подключенных источников
+
+						{% if lang === 'eng' %}
+				Easy to design reports and dashboards with data from any data sources connected
+						{% else %}
+				Легко создавать отчеты и дашборды используя данные из всех подключенных источников
+						{% endif %}
+
 								</dd>
 
 							</div>
@@ -80,12 +112,22 @@
 										<path stroke-width="3" d="M10 14v10c0 3.31 6.27 6 14 6s14-2.69 14-6V14"/>
 									</svg>
 
-									Базы данных
+						{% if lang === 'eng' %}
+				Databases
+						{% else %}
+				Базы данных
+						{% endif %}
 
 								</dt>
 
 								<dd>
-									Современные производительные базы данных&nbsp;для быстрой обработки и хранения финансовых данных
+
+						{% if lang === 'eng' %}
+				Easily store and process massive amounts of data
+						{% else %}
+				Современные производительные базы данных&nbsp;для быстрой обработки и хранения финансовых данных
+						{% endif %}
+
 								</dd>
 
 							</div>
@@ -100,12 +142,22 @@
 										<path d="M32 22.5H16v3h16v-3Z"/>
 									</svg>
 
-									Конструктор процессов
+						{% if lang === 'eng' %}
+				Workflow management
+						{% else %}
+				Конструктор процессов
+						{% endif %}
 
 								</dt>
 
 								<dd>
-									Создавайте и изменяйте воркфлоу процессов обработки данных с помощью BPM-интерфейса
+
+						{% if lang === 'eng' %}
+				Create and configure data processing workflow via BPMN interface
+						{% else %}
+				Создавайте и изменяйте воркфлоу процессов обработки данных с помощью BPM-интерфейса
+						{% endif %}
+
 								</dd>
 
 							</div>
@@ -118,11 +170,15 @@
 
 						<div class="technologies__btn">
 
-							<a class="btn btn--text" href="/f.Data.pdf" target="_blank">
+							<a class="btn btn--text" href="{% if lang === 'eng' %}/en{% endif %}/f.Data.pdf" target="_blank">
 
 								<span>
 
-									Спецификация
+						{% if lang === 'eng' %}
+				Specification
+						{% else %}
+				Спецификация
+						{% endif %}
 
 									<svg width="24" height="24" viewBox="0 0 24 24">
 										<path d="m12 16-.7.7.7.71.7-.7L12 16Zm1-12V3h-2v1h2Zm-7.7 6.7 6 6 1.4-1.4-6-6-1.4 1.4Zm7.4 6 6-6-1.4-1.4-6 6 1.4 1.4Zm.3-.7V4h-2v12h2ZM5 20h14v2H5v-2Z"/>

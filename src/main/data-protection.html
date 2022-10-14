@@ -8,9 +8,9 @@
 
 					<picture>
 
-						<source srcset="img/data-protection/bg--mobile.svg" media="(max-width: 767px)">
-						<source srcset="img/data-protection/bg--tablet.svg" media="(max-width: 1249px)">
-						<source srcset="img/data-protection/bg.svg">
+						<source srcset="/img/data-protection/bg--mobile.svg" media="(max-width: 767px)">
+						<source srcset="/img/data-protection/bg--tablet.svg" media="(max-width: 1249px)">
+						<source srcset="/img/data-protection/bg.svg">
 
 						<img src="/img/data-protection/bg.svg" alt="" loading="lazy" width="1320" height="362">
 
@@ -21,13 +21,19 @@
 				<div class="data-protection__content">
 
 					<p class="data-protection__title h2">
-						Защитите ваши финансовые данные сегодня
+
+						{% if lang === 'eng' %}
+				Protect your finance with f.Data
+						{% else %}
+				Защитите ваши финансовые данные сегодня
+						{% endif %}
+
 					</p>
 
 					<div class="data-protection__btn">
 
 						<button class="btn" type="button" data-modal="demo">
-							<span>Заказать демо</span>
+							<span>{% if lang === 'eng' %}Request demo{% else %}Заказать демо{% endif %}</span>
 						</button>
 
 					</div>

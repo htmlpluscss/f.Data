@@ -7,22 +7,34 @@
 				<div class="first-screen__content">
 
 					<h1 class="first-screen__title h1">
-						f.Data для вас
+
+						{% if lang === 'eng' %}
+				f.Data solution
+						{% else %}
+				f.Data для вас
+						{% endif %}
+
 					</h1>
 
 					<p class="first-screen__text">
-						Будущее Финансовых Данных
+
+						{% if lang === 'eng' %}
+				Future of your financial data
+						{% else %}
+				Будущее Финансовых Данных
+						{% endif %}
+
 					</p>
 
 					<div class="first-screen__btn">
 
 						<button class="btn" type="button" data-modal="demo">
-							<span>Заказать демо</span>
+							<span>{% if lang === 'eng' %}Request demo{% else %}Заказать демо{% endif %}</span>
 						</button>
 
 					</div>
 
-					<a class="first-screen__next" href="#next" aria-label="Следующий экран">
+					<a class="first-screen__next" href="#next" aria-label="{% if lang === 'eng' %}Next screen{% else %}Следующий экран{% endif %}">
 						<svg width="24" height="80" viewBox="0 0 24 80">
 							<path d="M12 80A12 12 0 0 0 0 68M12 80V0M12 80a12 12 0 0 1 12-12"/>
 						</svg>

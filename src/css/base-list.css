@@ -43,6 +43,16 @@
 		background-repeat: no-repeat;
 		background-size: auto 100%;
 
+		@media $desktop {
+
+			html[lang="en"] & {
+
+				padding-right: 20px;
+
+			}
+
+		}
+
 		a {
 
 			&::after {

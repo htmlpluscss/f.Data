@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" prefix="og: https://ogp.me/ns#">
+<html lang="{% if lang === 'eng' %}en{% else %}ru{% endif %}" prefix="og: https://ogp.me/ns#">
 <head>
 
 	<meta charset="utf-8">
@@ -20,7 +20,7 @@
 	<meta name="description" content="{{ description | default(site) }}">
 	<meta name="theme-color" content="#fdfdfd">
 
-	<meta property="og:locale" content="ru_RU">
+	<meta property="og:locale" content="{% if lang === 'eng' %}en_EN{% else %}ru_RU{% endif %}">
 	<meta property="og:site_name" content="{{ site }}">
 	<meta property="og:url" content="{{ url }}{% if urlPage %}/{{ urlPage }}/{% endif %}">
 	<meta property="og:type" content="{{ ogType | default('website') }}">

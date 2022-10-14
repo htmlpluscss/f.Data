@@ -10,10 +10,16 @@
 
 			<form action="/mail.php" class="form-demo modal__item modal__item--demo">
 
-				<input type="hidden" name="subject" value="Заказать демо">
+				<input type="hidden" name="subject" value="{% if lang === 'eng' %}Request demo{% else %}Заказать демо{% endif %}">
 
 				<h3 class="modal__title">
-					Заказать демо
+
+						{% if lang === 'eng' %}
+				Request demo
+						{% else %}
+				Заказать демо
+						{% endif %}
+
 				</h3>
 
 				<div class="modal__fieldset">
@@ -21,30 +27,48 @@
 					<label class="inputbox">
 
 						<span class="inputbox__label">
-							Имя
+
+						{% if lang === 'eng' %}
+				Name
+						{% else %}
+				Имя
+						{% endif %}
+
 						</span>
 
-						<input class="input" placeholder="Введите Имя" name="name" required="required">
+						<input class="input" placeholder="{% if lang === 'eng' %}Name{% else %}Введите Имя{% endif %}" name="name" required="required">
 
 					</label>
 
 					<label class="inputbox">
 
 						<span class="inputbox__label">
-							Телефон
+
+						{% if lang === 'eng' %}
+				Phone
+						{% else %}
+				Телефон
+						{% endif %}
+
 						</span>
 
-						<input class="input inputmask inputmask--phone" placeholder="+7 (ххх) ххх хх-хх" name="phone" type="tel" required="required">
+						<input class="input inputmask inputmask--phone" placeholder="{% if lang === 'eng' %}+7 (ххх) ххх хх-хх{% else %}+7 (ххх) ххх хх-хх{% endif %}" name="phone" type="tel" required="required">
 
 					</label>
 
 					<label class="inputbox">
 
 						<span class="inputbox__label">
-							E-mail
+
+						{% if lang === 'eng' %}
+				E-mail
+						{% else %}
+				E-mail
+						{% endif %}
+
 						</span>
 
-						<input class="input" placeholder="Введите E-mail" name="email" type="email" required="required">
+						<input class="input" placeholder="{% if lang === 'eng' %}E-mail{% else %}Введите E-mail{% endif %}" name="email" type="email" required="required">
 
 					</label>
 
@@ -55,7 +79,13 @@
 							<input class="checkbox__input" type="checkbox" required="required">
 
 							<span class="checkbox__label">
-								Я согласен с <a href="/" target="_blank">политикой конфиденциальности</a>
+
+						{% if lang === 'eng' %}
+				Я согласен с <a href="/" target="_blank">политикой конфиденциальности</a>
+						{% else %}
+				Я согласен с <a href="/" target="_blank">политикой конфиденциальности</a>
+						{% endif %}
+
 							</span>
 
 						</label>
@@ -65,7 +95,7 @@
 				</div>
 
 				<button class="modal__submit btn form-demo__submit">
-					<span>Заказать демо</span>
+					<span>{% if lang === 'eng' %}Request demo{% else %}Заказать демо{% endif %}</span>
 				</button>
 
 			</form>
@@ -81,20 +111,32 @@
 				</div>
 
 				<p class="modal__title">
-					Успех!
+
+						{% if lang === 'eng' %}
+				Успех!
+						{% else %}
+				Успех!
+						{% endif %}
+
 				</p>
 
 				<p class="modal__text">
-					Ваша заявка на получение демо-версии продукта успешно отправлена.
+
+						{% if lang === 'eng' %}
+				Ваша заявка на получение демо-версии продукта успешно отправлена.
+						{% else %}
+				Ваша заявка на получение демо-версии продукта успешно отправлена.
+						{% endif %}
+
 				</p>
 
-				<button type="button" class="modal__close modal__submit btn" aria-label="Закрыть">
-					<span>ОК</span>
+				<button type="button" class="modal__close modal__submit btn" aria-label="{% if lang === 'eng' %}Close{% else %}Закрыть{% endif %}">
+					<span>{% if lang === 'eng' %}OK{% else %}ОК{% endif %}</span>
 				</button>
 
 			</div>
 
-			<button type="button" class="modal__close modal__close-btn button" aria-label="Закрыть">
+			<button type="button" class="modal__close modal__close-btn button" aria-label="{% if lang === 'eng' %}Close{% else %}Закрыть{% endif %}">
 				<svg width="24" height="24" viewBox="0 0 24 24">
 					<path stroke-width="2" d="M18 6 6 18M6 6l12 12"/>
 				</svg>

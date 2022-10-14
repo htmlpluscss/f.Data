@@ -11,22 +11,22 @@
 				<ul class="header__menu">
 
 					<li>
-						<a href="/f.Data.pdf">Спецификация</a>
+						<a href="{% if lang === 'eng' %}/en{% endif %}/f.Data.pdf">{% if lang === 'eng' %}Specification{% else %}Спецификация{% endif %}</a>
 					</li>
 
 					<li>
-						<a href="#details">Видео-обзор</a>
+						<a href="#details">{% if lang === 'eng' %}What we do{% else %}Видео-обзор{% endif %}</a>
 					</li>
 
 					<li>
-						<button class="btn btn--text" type="button" data-modal="demo">Заказать демо</button>
+						<button class="btn btn--text" type="button" data-modal="demo">{% if lang === 'eng' %}Request demo{% else %}Заказать демо{% endif %}</button>
 					</li>
 
 				</ul>
 
 				<div class="header__btn-menu">
 
-					<button class="button btn-menu" type="button" aria-label="открыть меню">
+					<button class="button btn-menu" type="button" aria-label="{% if lang === 'eng' %}open menu{% else %}открыть меню{% endif %}">
 
 						<svg width="32" height="32" viewBox="0 0 32 32">
 							<path stroke-width="2" d="M6.67 9.33h18.66M6.67 16h18.66M6.67 22.67h18.66"/>
