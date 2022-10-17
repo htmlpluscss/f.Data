@@ -11,7 +11,7 @@
 				<ul class="header__menu">
 
 					<li>
-						<a href="{% if lang === 'eng' %}/en{% endif %}/f.Data.pdf">{% if lang === 'eng' %}Specification{% else %}Спецификация{% endif %}</a>
+						<a href="/f.Data{% if lang !== 'eng' %}_rus{% endif %}.pdf">{% if lang === 'eng' %}Specification{% else %}Спецификация{% endif %}</a>
 					</li>
 
 					<li>

@@ -52,7 +52,11 @@
 
 						</span>
 
+						{% if lang === 'eng' %}
+						<input class="input" placeholder="Phone" name="phone" type="tel" required="required">
+						{% else %}
 						<input class="input inputmask inputmask--phone" placeholder="{% if lang === 'eng' %}+7 (ххх) ххх хх-хх{% else %}+7 (ххх) ххх хх-хх{% endif %}" name="phone" type="tel" required="required">
+						{% endif %}
 
 					</label>
 
@@ -71,26 +75,6 @@
 						<input class="input" placeholder="{% if lang === 'eng' %}E-mail{% else %}Введите E-mail{% endif %}" name="email" type="email" required="required">
 
 					</label>
-
-					<div class="modal__checkbox checkbox">
-
-						<label class="checkbox__control">
-
-							<input class="checkbox__input" type="checkbox" required="required">
-
-							<span class="checkbox__label">
-
-						{% if lang === 'eng' %}
-				Я согласен с <a href="/" target="_blank">политикой конфиденциальности</a>
-						{% else %}
-				Я согласен с <a href="/" target="_blank">политикой конфиденциальности</a>
-						{% endif %}
-
-							</span>
-
-						</label>
-
-					</div>
 
 				</div>
 
@@ -113,7 +97,7 @@
 				<p class="modal__title">
 
 						{% if lang === 'eng' %}
-				Успех!
+				Success!
 						{% else %}
 				Успех!
 						{% endif %}
@@ -123,7 +107,7 @@
 				<p class="modal__text">
 
 						{% if lang === 'eng' %}
-				Ваша заявка на получение демо-версии продукта успешно отправлена.
+				Your request is well received! We are already connecting you
 						{% else %}
 				Ваша заявка на получение демо-версии продукта успешно отправлена.
 						{% endif %}

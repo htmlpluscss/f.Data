@@ -90,6 +90,16 @@
 
 		margin-bottom: 48px;
 
+		@media $desktop {
+
+			html[lang="en"] & {
+
+				white-space: nowrap;
+
+			}
+
+		}
+
 		@media $lgWidth {
 
 			margin-bottom: 60px;

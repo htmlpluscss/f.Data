@@ -46,7 +46,9 @@ const domain           = 'fdata.tech';
 
 try {
 
-	config           = require('./config.json');
+//	config           = require('./config.json');
+// ru,  en, index.php
+// pdf
 
 }catch(e){
 

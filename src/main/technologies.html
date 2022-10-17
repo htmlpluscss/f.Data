@@ -8,7 +8,7 @@
 
 					<div class="technologies__btn-tablet">
 
-						<a class="btn btn--outline" href="{% if lang === 'eng' %}/en{% endif %}/f.Data.pdf" target="_blank">
+						<a class="btn btn--outline" href="/f.Data{% if lang !== 'eng' %}_rus{% endif %}.pdf" target="_blank">
 
 							<span>
 
@@ -33,7 +33,7 @@
 						<h2 class="technologies__title h2">
 
 						{% if lang === 'eng' %}
-				Наши Технологии
+				Automation platform
 						{% else %}
 				Наши Технологии
 						{% endif %}
@@ -170,7 +170,7 @@
 
 						<div class="technologies__btn">
 
-							<a class="btn btn--text" href="{% if lang === 'eng' %}/en{% endif %}/f.Data.pdf" target="_blank">
+							<a class="btn btn--text" href="/f.Data{% if lang !== 'eng' %}_rus{% endif %}.pdf" target="_blank">
 
 								<span>
 
